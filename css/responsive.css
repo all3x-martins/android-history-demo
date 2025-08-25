@@ -1,0 +1,22 @@
+/* Media Queries */
+
+/* 768px */
+@media (width <= 768px) {
+  article {
+    padding: 25px;
+    margin: 20px 10px;
+  }
+
+  nav {
+    padding: 15px;
+  }
+
+  nav a {
+    padding: 10px 20px;
+    font-size: 0.9em;
+  }
+
+  aside ul {
+    grid-template-columns: 1fr;
+  }
+}

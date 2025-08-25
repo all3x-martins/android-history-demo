@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+/* Fontes Offline */
+
+/* Inter Variable Font (suporta todos os pesos 100-900) */
+@font-face {
+  font-family: Inter;
+  src: url('../assets/fonts/Inter-VariableFont.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Bebas Neue Regular */
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url('../assets/fonts/BebasNeue-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Palette: Color Variables */
+:root {
+  --cor0: #f8fffe;
+  --cor1: #e8f5f0;
+  --cor2: #3ddc84;
+  --cor3: #2fa866;
+  --cor4: #1a5c37;
+  --cor5: #0f2419;
+  --gradient-main: linear-gradient(135deg, #3ddc84 0%, #2fa866 100%);
+  --gradient-dark: linear-gradient(135deg, #2fa866 0%, #0f2419 100%);
+  --shadow-light: 0 4px 20px rgb(45 168 102 / 10%);
+  --shadow-medium: 0 8px 32px rgb(45 168 102 / 15%);
+  --shadow-strong: 0 12px 40px rgb(15 36 25 / 20%);
+  --border-radius: 16px;
+  --fonte-padrao: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-destaque: 'Bebas Neue', cursive;
+}
+
+/* Scroll suave */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Global Reset & Box Model */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*  Typography Base Styles */
+body {
+  background: linear-gradient(135deg, var(--cor0) 0%, var(--cor1) 100%);
+  font-family: var(--fonte-padrao);
+  line-height: 1.6;
+  color: var(--cor5);
+}

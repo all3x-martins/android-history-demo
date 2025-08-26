@@ -1,54 +1,106 @@
-# Projeto Android: História do Mascote do Android
+# História do Mascote do Android
 
-Este projeto foi desenvolvido durante o curso de HTML e CSS do Curso em Video, com o objetivo de criar um website simples e informativo sobre a história do mascote do Android.
+Website responsivo sobre a história do mascote do Android (Bugdroid), desenvolvido como projeto de estudo em HTML5 e CSS3.
 
-O projeto foi uma otima oportunidade para aplicar o que aprendi no curso, criando um site funcional que oferece ao usuário uma experiência educativa sobre o mascote do Android.
+## Sobre o Projeto
 
-## 🚀 Tecnologias utilizadas
-- **HTML5: Estrutura semântica do projeto.**
-- **CSS3: Estilização e design responsivo.**
-  
----
+Site informativo que apresenta a evolução do mascote do Android, desde as primeiras criações de Dan Morrill até o design final do Bugdroid por Irina Blok. Inclui informações sobre as versões históricas do Android nomeadas com doces.
 
-## 🚀 Como rodar o projeto
+## Tecnologias Utilizadas
 
-Para executar este projeto localmente, siga os passos abaixo:
+- **HTML5**: Estrutura semântica e acessível
+- **CSS3**: Estilização moderna com arquitetura modular
+- **Font Awesome**: Biblioteca de ícones
+- **Google Fonts**: Fontes Inter e Bebas Neue (com versões locais de backup)
 
-1. **Clone o repositório:**
-   ```bash
-   git clone https://github.com/all3x-martins/projeto-android.git
-   ```
+## Estrutura do Projeto
 
-2. **Acesse a pasta do projeto:**
-   ```bash
-   cd projeto-android
-   ```
+```
+android-history-demo/
+├── assets/
+│   ├── images/          # Imagens otimizadas do projeto
+│   └── fonts/           # Fontes locais (Inter e Bebas Neue)
+├── css/
+│   ├── base.css         # Variáveis CSS, reset e tipografia base
+│   ├── style.css        # Estilos dos componentes principais
+│   └── responsive.css   # Media queries para responsividade
+├── index.html           # Página principal
+└── README.md           # Documentação
+```
 
-3. **Abra o arquivo `index.html` em seu navegador preferido.**
+## Características Técnicas
 
----
+### CSS Modular
+- **base.css**: Variáveis CSS customizadas, reset global, definições tipográficas
+- **style.css**: Estilização de header, main, aside, footer e componentes
+- **responsive.css**: Adaptações para dispositivos móveis (≤768px)
 
-## 🤝 Contribuindo
+### Design System
+- Paleta de cores verde baseada no Android (6 tons: #f8fffe até #0f2419)
+- Gradientes CSS para elementos visuais
+- Sistema de sombras em três níveis
+- Tipografia responsiva com clamp()
 
-Contribuições são bem-vindas! Se você deseja ajudar no desenvolvimento deste projeto, siga estas etapas:
+### Responsividade
+- Layout adaptável com breakpoint principal em 768px
+- Navegação mobile otimizada
+- Imagens responsivas com lazy loading
+- Grid adaptativo para lista de versões Android
 
-1. **Faça um fork do repositório.**
-2. **Crie uma branch para suas modificações:**
-   ```bash
-   git checkout -b minha-feature
-   ```
-3. **Implemente suas alterações e faça commit:**
-   ```bash
-   git commit -m "Descrição das alterações"
-   ```
-4. **Envie as mudanças para o repositório remoto:**
-   ```bash
-   git push origin minha-feature
-   ```
-5. **Abra um pull request.**
+### Performance
+- Fontes locais com font-display: swap
+- Lazy loading implementado nas imagens
+- Estrutura CSS otimizada
 
----
+## Como Executar
 
-## 🔖 Licença
+1. Clone o repositório:
+```bash
+git clone https://github.com/all3x-martins/android-history-demo.git
+```
 
-Este projeto está licenciado sob a **MIT License**. Para mais detalhes, consulte o arquivo `LICENSE`.
+2. Navegue até o diretório:
+```bash
+cd android-history-demo
+```
+
+3. Abra o arquivo `index.html` em um navegador ou use um servidor local:
+```bash
+# Opção com Python
+python -m http.server 8000
+
+# Opção com Node.js
+npx live-server
+```
+
+## Funcionalidades
+
+- Layout responsivo para desktop e mobile
+- Navegação com ícones Font Awesome
+- Seção de vídeo incorporado do YouTube
+- Aside informativo com lista das versões Android
+- Links externos com indicadores visuais
+- Transições CSS suaves
+- Estrutura semântica HTML5
+
+## Paleta de Cores
+
+| Variável | Cor | Uso |
+|----------|-----|-----|
+| --cor0 | #f8fffe | Background principal |
+| --cor1 | #e8f5f0 | Background secundário |
+| --cor2 | #3ddc84 | Verde Android (destaque) |
+| --cor3 | #2fa866 | Verde médio |
+| --cor4 | #1a5c37 | Verde escuro (textos importantes) |
+| --cor5 | #0f2419 | Verde muito escuro (texto principal) |
+
+## Autor
+
+Desenvolvido por **Allexander Martins** como projeto de estudo.
+
+- GitHub: [@all3x-martins](https://github.com/all3x-martins)
+- Baseado no curso de HTML e CSS do [Curso em Vídeo](https://www.cursoemvideo.com)
+
+## Licença
+
+Este projeto está sob a licença MIT.
